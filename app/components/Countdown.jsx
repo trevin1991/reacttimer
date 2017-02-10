@@ -1,4 +1,5 @@
-let React = require("react");
+let React = require("react"),
+    Clock = require("Clock");
 
 class Countdown extends React.Component {
     constructor() {
@@ -7,7 +8,9 @@ class Countdown extends React.Component {
 
     render() {
         return (
-            <div>Countdown Component</div>
+            <div>
+                <Clock total={1} />
+            </div>
         );
     }
 }
