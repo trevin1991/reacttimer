@@ -1,4 +1,5 @@
-let React = require("react");
+let React = require("react"),
+    Clock = require("Clock");
 
 class Timer extends React.Component {
     constructor() {
@@ -7,7 +8,9 @@ class Timer extends React.Component {
 
     render() {
         return (
-            <div>Timer Component</div>
+            <div>
+                <Clock total={583} />
+            </div>
         )
     }
 }
